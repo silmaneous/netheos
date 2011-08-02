@@ -1,0 +1,21 @@
+.splash-home {
+	position: relative;
+	left: 0px;
+	
+	height: 515px;
+	width: 975px;
+	
+	background: transparent url(../images/splash-home.png) no-repeat top left;
+}
+
+.splash-footer {
+	position: relative;
+	top: 385px;
+	left: 50%;
+
+	width: 50%;
+	
+	font-family: Arial;
+	font-size: 16px;
+	color: #333333;
+}
