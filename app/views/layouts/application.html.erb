@@ -18,24 +18,9 @@
 </head>
 <body>
 	<div id="page">
-		<div id="top_box">
-			<form action="http://www.netheos.net/search" id="cse-search-box">
-					<input type="hidden" name="cx" value="016592608350948238660:0w_38ll37p0" />
-					<input type="hidden" name="cof" value="FORID:10;NB:1" />
-					<input type="hidden" name="ie" value="UTF-8" />
-					<input type="text" name="q" id="search_field" value="Search" />
-			</form>
-		</div>
-
-		<div id="header">
-			<a href="/"><img src="../images/header-left.png" alt="Netheos"/></a>
-			<ul id="header-menu">
-				<li><a href="">Solutions</a></li><li><a href="">Products</a></li><li><a href="">Services</a></li><li><a href="">About</a></li>
-			</ul>
-		</div>
-
-<%= yield %>
-
+		<%= render 'layouts/header' %>
+		<%= yield %>
+		<%= render 'layouts/footer' %>
 	</div>
 </body>
 </html>

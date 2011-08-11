@@ -1,9 +1,14 @@
 Netheos::Application.routes.draw do
-  get "page/home"
 
-  get "page/about"
-
-  get "page/contact"
+  match '/about', :to => 'page#about'
+  match '/usb_devices', :to => 'ekeynox#usb_devices'
+  match '/usb_toolkit', :to => 'ekeynox#usb_toolkit'
+  match '/mobile_toolkit', :to => 'ekeynox#mobile_toolkit'
+  match '/management_system', :to => 'ekeynox#management_system'
+  match '/solutions', :to => 'solutions#home'
+  match '/products', :to => 'products#products'
+  match '/services', :to => 'services#services'
+  root :to => 'page#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,21 +1,33 @@
-.splash-home {
-	position: relative;
-	left: 0px;
-	
-	height: 515px;
-	width: 975px;
-	
-	background: transparent url(../images/splash-home.png) no-repeat top left;
-}
-
-.splash-footer {
+#splash-home-footer {
 	position: relative;
 	top: 385px;
 	left: 50%;
 
 	width: 50%;
 	
-	font-family: Arial;
+  	font-family: "Lucida Grande", Verdana, sans-serif;
 	font-size: 16px;
-	color: #333333;
+	color: #666666;
+}
+
+/** Steps ***/
+
+.step {
+    float: left;
+
+	height: 404px;
+	width: 310px;
+	margin-top: 45px;
+	
+	background: transparent;	
+}
+
+.step-middle {
+    float: left;
+
+	height: 404px;
+	width: 310px;
+	margin: 45px 10px 0px 10px;
+	
+	background: transparent;	
 }
