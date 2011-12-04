@@ -11,4 +11,7 @@ class PageController < ApplicationController
     @title = "Contact"
   end
 
+  def todo
+    @title = "ToDo"
+  end
 end

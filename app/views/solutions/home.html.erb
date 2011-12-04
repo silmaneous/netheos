@@ -1,73 +1,89 @@
+<script type="text/javascript">
+jQuery(function($){
+
+    $('a.zoombox').zoombox({
+        theme       : 'zoombox',        //available themes : zoombox,lightbox, prettyphoto, darkprettyphoto, simple
+        opacity     : 0.8,              // Black overlay opacity
+        duration    : 600,              // Animation duration
+        animation   : true,             // Do we have to animate the box ?
+        width       : 800,              // Default width
+        height      : 400,              // Default height
+        gallery     : true,             // Allow gallery thumb view
+        autoplay : false                // Autoplay for video
+    });
+});
+</script>
+
 <div class="splash" id="splash-solutions">
-	<h1 id="splash-product_name">Netheos Solutions</h1>
-	<p id="splash-title">Solutions you need</br>in your pocket</p>
+	<h1>Corporate Solutions</br>to Trust online Services</h1>
 </div>
 
-<div class="menu">
-	<div class="item">
-		<div class="picto_frame">
-			<% picto = image_tag("lock_small.png", :alt => "Strong authentication", :class => "picto") %>
-			<%= link_to picto, usb_devices_path %>
-		</div>
-		<h3>Strong authentication</h3>
-		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
-	</div>
+<div id="column">fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf </div>
+<div id="overview">fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd
+</div>
 
+<div class="clear"></div>
+
+<div class="list">
+	<h2>Business Needs Solutions</h2>
 	<div class="item">
 		<div class="picto_frame">
-			<% picto = image_tag("trusted_browser.png", :alt => "Trusted Browser", :class => "picto") %>
-			<%= link_to picto, usb_devices_path %>
+			<% picto = image_tag("trusted_browser.png", :alt => "Online Web Access Security", :class => "picto") %>
+			<%= link_to picto, solutions_online_web_access_security_path, :class => "zoombox" %>
 		</div>
-		<h3>Trusted web browsing</h3>
-		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
+		<h3>Online Web Access Security</h3>
+		<p>Strong authentication + MitB protection fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd <%= link_to "picto", solutions_path, :class => "zoombox" %></p>
 	</div>
 	
 	<div class="item">
 		<div class="picto_frame">
 			<% picto = image_tag("signature_small.png", :alt => "Digital Signature", :class => "picto") %>
-			<%= link_to picto, usb_devices_path %>
+			<%= link_to picto, solutions_digital_signature_path %>
 		</div>
-		<h3>Digital signature</h3>
+		<h3>Online Fast Contract Agreement</h3>
 		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
 	</div>
-	
+
 	<div class="item">
 		<div class="picto_frame">
-			<% picto = image_tag("signature_small.png", :alt => "Digital Signature", :class => "picto") %>
-			<%= link_to picto, usb_devices_path %>
+			<% picto = image_tag("trusted_viewer.png", :alt => "Trusted Viewer", :class => "picto") %>
+			<%= link_to picto, solutions_dlp_path %>
 		</div>
-		<h3>Data leakage protection</h3>
+		<h3>Data Leakage Protection</h3>
 		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
 	</div>
+
 </div>
 
-<div class="menu">
+<div class="list">
+	<h2>Industry Solutions</h2>
 	<div class="item">
 		<div class="picto_frame">
-			<% picto = image_tag("fraud_protection.png", :alt => "Fraud Protection", :class => "picto") %>
-			<%= link_to picto, usb_devices_path %>
+			<% picto = image_tag("signature_small.png", :alt => "Financial Institutions Protection", :class => "picto") %>
+			<%= link_to picto, solutions_financial_institutions_path %>
+		</div>
+		<h3>Financial Institutions</h3>
+		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
+	</div>
+
+	<div class="item">
+		<div class="picto_frame">
+			<% picto = image_tag("signature_small.png", :alt => "Security Device Manufacturers (OEM)", :class => "picto") %>
+			<%= link_to picto, solutions_security_device_manufacturers_path %>
 		</div>	
-		<h3>On-line fraud protection</h3>
+		<h3>Security Device Manufacturers (OEM)</h3>
 		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
 	</div>
 	
 	<div class="item">
 		<div class="picto_frame">
-			<% picto = image_tag("signature_small.png", :alt => "Digital Signature", :class => "picto") %>
-			<%= link_to picto, usb_devices_path %>
+			<% picto = image_tag("signature_small.png", :alt => "Software Editors (OEM)", :class => "picto") %>
+			<%= link_to picto, solutions_software_editors_path %>
 		</div>
-		<h3>Distant access & mobile office</h3>
+		<h3>Software Editors (OEM)</h3>
 		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
 	</div>
 	
-	<div class="item">
-		<div class="picto_frame">
-			<% picto = image_tag("signature_small.png", :alt => "Digital Signature", :class => "picto") %>
-			<%= link_to picto, usb_devices_path %>
-		</div>
-		<h3>It's the title number 6</h3>
-		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
-	</div>
 </div>	
 
 <div class="clear"></div>
