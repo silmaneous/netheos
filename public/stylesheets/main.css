@@ -57,20 +57,10 @@ table {
 body {
 	text-align: center;
 	background-color: #f8f8f8;
+	/* background-color: #eeeeee; */
+	/* background-color: #f8f8f8; */
 	/* background-image: url(); */
 	color: #333333;
-}
-
-body, h1, h2, h3, h4, h5 {
-	font-family: "Lucida Grande", Verdana, sans-serif;
-}
-
-p {
-	color: #333333;
-	font-size: 16px;	
-	font-style: normal;	
-	line-height: 1.3em;
-	font-family: "Lucida Grande", Verdana, sans-serif;
 }
 
 #page {
@@ -83,48 +73,72 @@ p {
 	background-color: transparent;
 }
 
-/** Title **/
+body, h1, h2, h3, h4, h5 {
+	font-family: "Lucida Grande", Verdana, sans-serif;
+}
 
 h1 {
 	/* Splashs section */
 }
 
 h2 {
-	padding: 0 0 2px 0;
+	padding: 0 0 3px 0;
 	margin: 0 0 30px 0;
 	
 	color: #333333;
-	font-size: 24px;
+	font-size: 22px;
 	text-align: left;
 	font-weight: 500;
 	line-height: 1.1em;
 	font-style: normal;
 	letter-spacing: -1px;
+  	font-family: "Lucida Grande", Verdana, sans-serif;
 	border-bottom: solid 1px #ff8f00 ;
 }
 
 h3 {
 	margin: 0 0 30px 0;
-	
-	color: #666666;
-	font-size: 24px;
+
+	color: #ff8f00;
+	font-size: 18px;
 	font-weight: 500;
 	line-height: 1.1em;
 	font-style: normal;
-
+  	font-family: "Lucida Grande", Verdana, sans-serif;
 }
 
-h4 {
-	margin: 0 0 0 0;
-	
+p {
+	margin: 0 0 15px 0;
+
 	color: #333333;
-	font-size: 46px;
-	font-weight: 500;
-	line-height: 1.1em;
-	letter-spacing: -1px;
-	font-style: normal;
-	font-family: Times, Georgia, serif;
+	font-size: 16px;	
+	text-align: justify;
+	font-style: normal;	
+	line-height: 1.3em;
+	font-family: "Lucida Grande", Verdana, sans-serif;
 }
+
+
+/** links **/
+
+a, a:visited {
+	color: #777777;	
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.learn_more {
+	padding-right: 15px;
+	/* background : transparent url(../images/follow.png) no-repeat right center; */	
+}
+
+.email_link {
+	text-decoration: underline;
+}
+
 
 /** Header **/
 
@@ -153,7 +167,6 @@ header {
 header nav {
 	height: 60px;
 	margin: 15px 0 10px 0;
-	/**margin-bottom: 20px;**/
 	
 	background: url(../images/nav.png) no-repeat top right;
 }
@@ -175,7 +188,7 @@ header nav ul li > a, hearder nav ul li > a:visited {
 	padding: 16px 0px 15px 0px;
 	margin-right: 25px;
 	
-	font-family: Candara, verdana, sans-serif;
+	font-family: Candara, "Lucida Grande", verdana, sans-serif;
 	text-decoration: none;
 	font-size: 20px;
 	color: #eeeeee;
@@ -188,7 +201,11 @@ header nav ul li > a:hover {
 /** Footer **/
 
 footer {
+	height: 30px;
 	margin: 30px 0 10px 0;
+	padding: 15px 0 0 0;
+	
+	background: url(../images/bg_footer.png) repeat top;
 }
 
 footer a, footer a:visited {
@@ -222,13 +239,12 @@ footer a:hover {
 	letter-spacing: -1px;
 	font-style: normal;
 	font-family: Times, Georgia, serif;
-/*	font-family: Candara, verdana, sans-serif;*/
 }
 
-.splash h1-reverse {
+.splash .h1-reverse {
 	position: relative;
-	text-align: right;
-	right: 120px;
+	text-align: left;
+	left: 400px;
 	top: 120px;
 	
 	color: #333333;
@@ -238,7 +254,6 @@ footer a:hover {
 	letter-spacing: -1px;
 	font-style: normal;
 	font-family: Times, Georgia, serif;
-/*	font-family: Candara, verdana, sans-serif;*/
 }
 
 .splash ul {
@@ -249,16 +264,15 @@ footer a:hover {
 
 .splash ul li {
 	display: inline-block;
-	margin: 0 45px 0 0;
+    width: 195px;
 
+	text-align: center;
 	list-style-type: none;
 	color: #eeeeee;
 }
 
 .splash ul li > a, .splash ul li > a:visited {
-	padding: 15px 10px 15px 10px;
-	
-	font-family: Candara, verdana, sans-serif;
+	font-family: Candara, "Lucida Grande", verdana, sans-serif;
 	text-decoration: none;
 	font-size: 20px;
 	color: #eeeeee;
@@ -268,40 +282,20 @@ footer a:hover {
 	color: #ffffff;
 }
 
-#splash-home {
-	background: transparent url(../images/splash-home.png) no-repeat top left;
-}
 
-#splash-solutions {
-	background: transparent url(../images/splash-solutions.png) no-repeat top left;
-}
+/** Main ***/
 
-#splash-ekeynox {
-	background: transparent url(../images/splash-ekeynox.png) no-repeat top left;
-}
-
-#splash-mobile_toolkit {
-	background: transparent url(../images/splash-mobile_toolkit.png) no-repeat top left;
-}
-
-/** Text ***/
-
-#overview {
-    width: 650px;
-	text-align: justify;
-
-	font-size:16px;
+/* #overview {
 } 
 
 #overview > p {
-	margin: 0 0 20px 0;
-}
+}*/
 
 #column {
 	float: right;
 	
     width: 240px;
-	padding: 3px 0 0 10px;
+	padding: 3px 0 0 0;
 	margin-left: 49px;
 	text-align: left;
 	
@@ -310,16 +304,7 @@ footer a:hover {
 }
 
 #column > h2 {
-	padding: 0 0 2px 0;
-	margin: 0 0 20px 0;
-	
-	color: #333333;
-	font-size: 20px;
-	text-align: left;
 	font-weight: 700;
-	line-height: 1.1em;
-	font-style: normal;
-	letter-spacing: -1px;
 	border-bottom: solid 1px #cccccc ;
 }
 
@@ -374,25 +359,25 @@ footer a:hover {
 
 /** List **/
 
-.list {
-	float: left;
+table {
+	width: 950px;
+	margin: 30px 0 0 0;
+}
+
+table tr {
+}
+
+table td {
+	margin: 30px 0 5px 0px;	
+	padding: 0 30px 0 30px;	
+	
 	text-align: left;
-	
-	width: 44%;
-	margin: 30px 3% 0 3%;
-
-	line-height: 1.1em;
 }
 
-.list .item {
-	margin: 40px 0 5px 0px;	
-}
-
-.list .number {
+table .number {
 	float: left;
-	
-	margin-top: 30px;
-	margin-right: 0px;
+
+	margin: 10px 20px 15px 0;
 	
 	color: #cccccc;
 	font-size: 60px;
@@ -401,46 +386,18 @@ footer a:hover {
 	font-family: Verdana, serif;
 }
 
-.list .picto {
-	float: right;
-	position: relative;
-	top: -5px;
-}
-
-.list .picto_frame {
-	/*border: 1px solid red;*/
+table .picto {
 	float: left;
+	top: -5px;
 
-	margin-right: 40px;
-	
-	width: 100px;
-    height: 100px;
+	margin: 0 20px 20px 0;
 }
 
-.list h2 {
-	margin: 0 0 30px 0;
-	
-	color: #333333;
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 1.1em;
-	font-style: normal;
-	letter-spacing: -1px;
-	border-bottom: solid 1px #ff8f00 ;
-  	font-family: "Lucida Grande", Verdana, sans-serif;
+table h3 {
+	margin: 10px 0 5px 0;
 }
 
-.list h3 {
-	margin: 10px 0 5px 60px;
-	
-	color: #ff8f00;
-	font-size: 16px;
-  	font-family: "Lucida Grande", Verdana, sans-serif;
-}
-
-.list p {
-	margin: 0 0 0 60px;
-		
+table p {	
 	color: #333333;
 	font-size: 12px;
 	text-align: justify;

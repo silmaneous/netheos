@@ -14,76 +14,71 @@ jQuery(function($){
 });
 </script>
 
-<div class="splash" id="splash-solutions">
+<div class="splash" style="background: transparent url(../images/splash-solutions.png) no-repeat top left">
 	<h1>Corporate Solutions</br>to Trust online Services</h1>
 </div>
 
-<div id="column">fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf </div>
-<div id="overview">fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd
+<div id="column">
+	<h2>Pouet</h2>
+	<p>fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf</p>
+</div>
+<div id="overview">
+	<p>Netheos développe des solutions innovantes, simples à utiliser et adaptées aux problématiques de e|m-commerce et de e|m-banking. Elle propose également des solutions packagées répondant aux problématiques de mobilité et de dématérialisation des processus internes qu’une entreprise peut rencontrer.</p>
+	<p>Ses solutions reposent sur l’usage de certificats numériques et de logiciels sécurisés embarqués sur des personal devices such as USB flash drives/tokens (Windows and Mac OS), smartphones and tablets (iOS and Android).</p>
 </div>
 
 <div class="clear"></div>
 
-<div class="list">
-	<h2>Business Needs Solutions</h2>
-	<div class="item">
-		<div class="picto_frame">
-			<% picto = image_tag("trusted_browser.png", :alt => "Web Access Protection", :class => "picto") %>
-			<%= link_to picto, solutions_web_access_protection_path, :class => "zoombox" %>
-		</div>
-		<h3>Web Access Protection</h3>
-		<p>Strong authentication + MitB protection fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd <%= link_to "picto", solutions_path, :class => "zoombox" %></p>
-	</div>
-	
-	<div class="item">
-		<div class="picto_frame">
-			<% picto = image_tag("signature_small.png", :alt => "Digital Signature", :class => "picto") %>
-			<%= link_to picto, solutions_digital_signature_path %>
-		</div>
-		<h3>Online Fast Contract Agreement</h3>
-		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
-	</div>
+<table>
+    <thead>
+        <tr>
+			<td><h2>Business Solutions</h2></td>
+			<td><h2>Industry Solutions</h2></td>
+		</tr>
+    </thead>
+    <tbody>
+		<tr>
+			<td>
+				<% picto = image_tag("trusted_browser.png", :alt => "Web Access Protection", :class => "picto") %>
+				<%= link_to picto, solutions_web_access_protection_path %>
+				<h3>Web Access Protection</h3>
+				<p>Strong authentication + MitB protection fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
+			</td>
+			<td>
+				<% picto = image_tag("signature.png", :alt => "Financial Institutions", :class => "picto") %>
+				<%= link_to picto, solutions_financial_institutions_path %>
+				<h3>Financial Institutions</h3>
+				<p>qdcqd fq fe fqfdsf dqf qf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef. <%= link_to "Learn more -->", "#", :class => "learn_more"%></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<% picto = image_tag("signature.png", :alt => "Digital Signature", :class => "picto") %>
+				<%= link_to picto, solutions_digital_signature_path %>
+				<h3>Online Fast Contract Agreement</h3>
+				<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
+			</td>
+			<td>
+				<% picto = image_tag("signature.png", :alt => "Device Manufacturers (OEM)", :class => "picto") %>
+				<%= link_to picto, solutions_device_manufacturers_path %>
+				<h3>Device Manufacturers (OEM)</h3>
+				<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<% picto = image_tag("trusted_viewer.png", :alt => "Data Leakage Protection", :class => "picto") %>
+				<%= link_to picto, solutions_data_leakage_protection_path %>
+				<h3>Data Leakage Protection</h3>
+				<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
+			</td>
+			<td>
+				<% picto = image_tag("signature.png", :alt => "Software Editors (OEM)", :class => "picto") %>
+				<%= link_to picto, solutions_software_editors_path %>
+				<h3>Software Editors (OEM)</h3>
+				<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
+			</td>
+		</tr>
+    </tbody>
+</table>
 
-	<div class="item">
-		<div class="picto_frame">
-			<% picto = image_tag("trusted_viewer.png", :alt => "Data Leakage Protection", :class => "picto") %>
-			<%= link_to picto, solutions_data_leakage_protection_path %>
-		</div>
-		<h3>Data Leakage Protection</h3>
-		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
-	</div>
-
-</div>
-
-<div class="list">
-	<h2>Industry Solutions</h2>
-	<div class="item">
-		<div class="picto_frame">
-			<% picto = image_tag("signature_small.png", :alt => "Financial Institutions", :class => "picto") %>
-			<%= link_to picto, solutions_financial_institutions_path %>
-		</div>
-		<h3>Financial Institutions</h3>
-		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
-	</div>
-
-	<div class="item">
-		<div class="picto_frame">
-			<% picto = image_tag("signature_small.png", :alt => "Device Manufacturers (OEM)", :class => "picto") %>
-			<%= link_to picto, solutions_device_manufacturers_path %>
-		</div>	
-		<h3>Device Manufacturers (OEM)</h3>
-		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
-	</div>
-	
-	<div class="item">
-		<div class="picto_frame">
-			<% picto = image_tag("signature_small.png", :alt => "Software Editors (OEM)", :class => "picto") %>
-			<%= link_to picto, solutions_software_editors_path %>
-		</div>
-		<h3>Software Editors (OEM)</h3>
-		<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
-	</div>
-	
-</div>	
-
-<div class="clear"></div>

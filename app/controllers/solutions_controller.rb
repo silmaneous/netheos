@@ -5,11 +5,11 @@ class SolutionsController < ApplicationController
     @title = @@title
   end
 
-  def web_access_security
+  def web_access_protection
     @title = @@title
   end
 
-  def dlp
+  def data_leakage_protection
     @title = @@title
   end
 
@@ -21,7 +21,7 @@ class SolutionsController < ApplicationController
     @title = @@title
   end
   
-  def security_device_manufacturers
+  def device_manufacturers
     @title = @@title
   end
   

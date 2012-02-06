@@ -5,15 +5,11 @@ class EkeynoxController < ApplicationController
     @title = @@title
   end
   
-  def management_system
-    @title = @@title
-  end
-
   def usb_trust
       @title = @@title
   end
 
-  def mobile_trust
+  def mobile_sdk_apps
     @title = @@title
   end
 
