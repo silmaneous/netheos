@@ -1,10 +1,13 @@
 Netheos::Application.routes.draw do
 
   match '/about', :to => 'page#about'
+
   match '/ekeynox', :to => 'ekeynox#home'
   match '/ekeynox/usb_trust', :to => 'ekeynox#usb_trust'
   match '/ekeynox/mobile_trust', :to => 'ekeynox#mobile_trust'
   match '/ekeynox/mobile_sdk_apps', :to => 'ekeynox#mobile_sdk_apps'
+  match '/ekeynox/usb_devices', :to => 'ekeynox#usb_devices'
+
   match '/solutions', :to => 'solutions#home'
   match '/solutions/web_access_protection', :to => 'solutions#web_access_protection'
   match '/solutions/digital_signature', :to => 'solutions#digital_signature'
@@ -12,6 +15,7 @@ Netheos::Application.routes.draw do
   match '/solutions/financial_institutions', :to => 'solutions#financial_institutions'
   match '/solutions/device_manufacturers', :to => 'solutions#device_manufacturers'
   match '/solutions/software_editors', :to => 'solutions#software_editors'
+
   root :to => 'page#home'
 
   # The priority is based upon order of creation:

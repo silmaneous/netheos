@@ -10,4 +10,22 @@ module ApplicationHelper
     end
   end
 
+  # Return true if header is require
+  def header
+    if @header.nil?
+      true
+    else
+      @header
+    end
+  end
+
+  # Return true if footer is require
+  def footer
+    if @footer.nil?
+      true
+    else
+      @footer
+    end
+  end
+
 end

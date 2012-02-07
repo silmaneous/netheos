@@ -1,3 +1,19 @@
+<script type="text/javascript">
+jQuery(function($){
+
+    $('a.zoombox').zoombox({
+        theme       : 'lightbox',        //available themes : zoombox, lightbox, prettyphoto, darkprettyphoto, simple
+        opacity     : 0.8,              // Black overlay opacity
+        duration    : 600,              // Animation duration
+        animation   : true,             // Do we have to animate the box ?
+        width       : 1000,              // Default width
+        height      : 400,              // Default height
+        gallery     : true,             // Allow gallery thumb view
+        autoplay : false                // Autoplay for video
+    });
+});
+</script>
+
 <div class="splash" style="background: transparent url(../images/splash-usb_trust.png) no-repeat top left">
 	<h1>Protect your sensitives</br>online services</h1>
 	<ul>
@@ -16,30 +32,23 @@
 	<p>fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf</p>
 </div>
 
-<div id="overview">
-	<p>USB Trust est une famille de logiciels spécialement conçus pour être embarqués sur des périphériques de stockage USB en conservant leur performance et en proposant à l’utilisateur une expérience adapté au support USB.</p>
-	<p>Que ce soit depuis un « USB Virtual Token » ou depuis un « USB flash token », la suite logicielle USB Trust est la solution simple et robuste pour protéger l’accès à vos portails web, signer numériquement des transactions et des documents électroniques.</p>
-	<p>En associant sur un unique objet les moyens de l’authentification forte aux logiciels les utilisant, l’utilisateur n’a plus qu’à connecter son périphérique USB à n’importe quel ordinateur, PC ou Mac (Windows ou MacOSX), pour accéder à ses services et les utiliser.</p>
-	<p>Les certificats numériques, les logiciels qui y sont associés ainsi que leurs politiques de sécurité, sont déployés et administrés via le Management System eKeynox.</p>
-</div>
+<p>USB Trust est une famille de logiciels spécialement conçus pour être embarqués sur des périphériques de stockage USB en conservant leur performance et en proposant à l’utilisateur une expérience adapté au support USB.</p>
+<p>Que ce soit depuis <%= link_to "un « USB Virtual Token » ou depuis un « USB flash token »", ekeynox_usb_devices_path, :class => "zoombox" %>, la suite logicielle USB Trust est la solution simple et robuste pour protéger l’accès à vos portails web, signer numériquement des transactions et des documents électroniques.</p>
+<p>En associant sur un unique objet les moyens de l’authentification forte aux logiciels les utilisant, l’utilisateur n’a plus qu’à connecter son périphérique USB à n’importe quel ordinateur, PC ou Mac (Windows ou MacOSX), pour accéder à ses services et les utiliser.</p>
+<p>Les certificats numériques, les logiciels qui y sont associés ainsi que leurs politiques de sécurité, sont déployés et administrés via le Management System eKeynox.</p>
 
 <div class="clear"></div>
 
-<h4>Provide a Trusted Application in 3 steps</h4>
+<h4>Protect your sensitive online services in 3 steps</h4>
 
 <% step1 = image_tag("step1.png", :alt => "Choose your USB Devices", :class => "step") %>
-<%= link_to step1, "#usb_devices" %>
+<%= link_to step1, ekeynox_usb_devices_path, :class => "zoombox" %>
 
 <% step2 = image_tag("step2.png", :alt => "Build your Application", :class => "step-middle") %>
-<%= link_to step2, "#application" %>
+<%= link_to step2, ekeynox_usb_devices_path, :class => "zoombox" %>
 
 <% step3 = image_tag("step3.png", :alt => "Manage over the Internet", :class => "step") %>
-<%= link_to step3, "#management" %>
+<%= link_to step3, ekeynox_usb_devices_path, :class => "zoombox" %>
 
 <div class="clear"></div>
-
-<h2 id="usb_devices">Choose your USB Devices</h2>
-<h2 id="application">Build your Application</h2>
-<h2 id="management">Manage over the Internet</h2>
-
 

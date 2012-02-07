@@ -9,6 +9,13 @@ class EkeynoxController < ApplicationController
       @title = @@title
   end
 
+  def usb_devices
+      @title = @@title
+      
+      @header = false
+      @footer = false
+  end
+
   def mobile_sdk_apps
     @title = @@title
   end

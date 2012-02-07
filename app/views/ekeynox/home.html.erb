@@ -1,3 +1,19 @@
+<script type="text/javascript">
+jQuery(function($){
+
+    $('a.zoombox').zoombox({
+        theme       : 'lightbox',        //available themes : zoombox, lightbox, prettyphoto, darkprettyphoto, simple
+        opacity     : 0.7,              // Black overlay opacity
+        duration    : 600,              // Animation duration
+        animation   : true,             // Do we have to animate the box ?
+        width       : 800,              // Default width
+        height      : 400,              // Default height
+        gallery     : true,             // Allow gallery thumb view
+        autoplay : false                // Autoplay for video
+    });
+});
+</script>
+
 <div class="splash" style="background: transparent url(../images/splash-ekeynox.png) no-repeat top left">
 	<h1>Protect your sensitives</br>online services</h1>
 	<ul>
@@ -7,19 +23,13 @@
 	</ul>
 </div>
 
-<div id="column">
-	<h2>eKeynox Family</h2>
-	<p>fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf</p><br/>
-	<h2>Partners</h2>
-	<% picto = image_tag("../images/partners/logo-keynectis.png", :alt => "Keynectis") %>
-	<%= link_to picto, "http://www.keynectis.com", :target => "_blank" %>
-</div>
+<% diagram = image_tag("../images/ekeynox_big_picture.png", :alt => "ekeynox", :class => "diagram") %>
+<%= link_to diagram, "../images/ekeynox_big_picture.png", :class => "zoombox" %>
 
-<div id="overview">
-	<p>eKeynox est une famille de logiciels valorisant les certificats numériques sur différents types de périphériques personnels pour assurer la confiance dans les services en ligne des entreprises ainsi que la confidentialité des données personnelles qui y sont attachées. De l’authentification forte à la signature électronique en passant pas le chiffrement des données, eKeynox associe l’usage côté client de certificats numériques à des mécanismes de protection contre des attaques applicatives comme le « Man in the Browser ».</p>
-	<p>Les logiciels clients de la famille eKeynox, leurs politiques de sécurité et leurs certificats numériques sont déployés et administrés via le Management System eKeynox. Cet ensemble de serveur peut-être intégré dans l’entreprise ou souscrit sous forme de service chez un de nos partenaires.</p>
-	<p>L’ensemble de ces logiciels a été conçu pour être utilisé simplement et rapidement, de façon à valoriser les services associés aux certificats numériques.</p>
-</div>
+<p>eKeynox est une famille de logiciels valorisant les certificats numériques sur différents types de périphériques personnels pour assurer la confiance dans les services en ligne des entreprises ainsi que la confidentialité des données personnelles qui y sont attachées. De l’authentification forte à la signature électronique en passant pas le chiffrement des données, eKeynox associe l’usage côté client de certificats numériques à des mécanismes de protection contre des attaques applicatives comme le « Man in the Browser ».</p>
+<p>Les logiciels clients de la famille eKeynox, leurs politiques de sécurité et leurs certificats numériques sont déployés et administrés via le Management System eKeynox. Cet ensemble de serveur peut-être intégré dans l’entreprise ou souscrit sous forme de service chez un de nos partenaires.</p>
+
+<h4>Une autre façon de voir la PKI</h4>
 
 <div class="clear"></div>
 

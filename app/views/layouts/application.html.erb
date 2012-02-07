@@ -17,9 +17,8 @@
 	
 </head>
 <body>
-	<div id="page">
-	<%= render 'layouts/header' %>
-	<%= yield %></div>
-	<%= render 'layouts/footer' %>
+	<%= if header then render 'layouts/header' end %>
+	<div id="page"><%= yield %></div>
+	<%= if footer then render 'layouts/footer' end %>
 </body>
 </html>
