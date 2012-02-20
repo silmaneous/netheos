@@ -6,7 +6,7 @@ jQuery(function($){
         opacity     : 0.7,              // Black overlay opacity
         duration    : 600,              // Animation duration
         animation   : true,             // Do we have to animate the box ?
-        width       : 800,              // Default width
+        width       : 1000,              // Default width
         height      : 400,              // Default height
         gallery     : true,             // Allow gallery thumb view
         autoplay : false                // Autoplay for video
@@ -15,63 +15,64 @@ jQuery(function($){
 </script>
 
 <div class="splash" style="background: transparent url(../images/splash-ekeynox.png) no-repeat top left">
-	<h1>Protect your sensitives</br>online services</h1>
+	<h1>Protect your sensitive</br>online services</h1>
 	<ul>
-		<li><%= link_to "eKeynox", ekeynox_path, :style => "color: #ffffff" %></li>
-		<li><%= link_to "USB Trust", ekeynox_usb_trust_path %></li>
-		<li><%= link_to "Mobile SDK & Apps", ekeynox_mobile_sdk_apps_path %></li>
+		<li><%= link_to "eK Apps", ekeynox_apps_path%></li>
+		<li><%= link_to "eK USB Trust", ekeynox_usb_trust_path %></li>
+		<li><%= link_to "eK Mobile SDK", ekeynox_mobile_sdk_path %></li>
 	</ul>
 </div>
 
 <% diagram = image_tag("../images/ekeynox_big_picture.png", :alt => "ekeynox", :class => "diagram") %>
 <%= link_to diagram, "../images/ekeynox_big_picture.png", :class => "zoombox" %>
 
-<p>eKeynox est une famille de logiciels valorisant les certificats numériques sur différents types de périphériques personnels pour assurer la confiance dans les services en ligne des entreprises ainsi que la confidentialité des données personnelles qui y sont attachées. De l’authentification forte à la signature électronique en passant pas le chiffrement des données, eKeynox associe l’usage côté client de certificats numériques à des mécanismes de protection contre des attaques applicatives comme le « Man in the Browser ».</p>
-<p>Les logiciels clients de la famille eKeynox, leurs politiques de sécurité et leurs certificats numériques sont déployés et administrés via le Management System eKeynox. Cet ensemble de serveur peut-être intégré dans l’entreprise ou souscrit sous forme de service chez un de nos partenaires.</p>
-
-<h4>Une autre façon de voir la PKI</h4>
+<p>The eKeynox product family that combines innovation and ease-of-use to deploy digital certificates on a variety of computing platforms: PC and Mac, USB flash drive/token, smartphones and tablets.</p>
+<p>From strong authentication to digital signatures and data encryption, eKeynox leverages the Public Key Infrastructure (PKI) by creating new uses for new markets.</p>
+<p>Client software in the eKeynox family, related security policies and their digital certificates are deployed and managed using the eKeynox Management System. This server-side solution can be integrated easily at your company site, and is also available as a service from our partners.</p>
 
 <div class="clear"></div>
+
+<h4>A new approach to PKI</h4>
 
 <table>
     <tbody>
 		<tr>
 			<td>
 				<span class="number">1</span>
-				<h3>All digital certificates benefits without disadvantages</h3>
-				<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
+				<h3>Adding value to digital certificates</h3>
+				<p>Take advantage of your digital certificates by building new use cases easily to ensure trust and privacy on new markets.</p>
 			</td>
 			<td>
+				<span class="number">4</span>
+				<h3>Multi-PKI  strategy</h3>
+				<p>Connect internal and external PKIs to eKeynox and distribute certificates transparently to your devices for authentication, signature and encryption.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
 				<span class="number">2</span>
-				<h3>It's the title number 2</h3>
-				<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
+				<h3>Shortcut to Public Key Infrastructure <span style="font-size: 16px">(PKI)</span></h3>
+				<p>Implement digital certificates without complex infrastructure quickly for your company's internal needs or for your clients.</p>
+			</td>
+			<td>
+				<span class="number">5</span>
+				<h3>Multi-device / Multi-OS strategy</h3>
+				<p>No need to change your IT when you change your devices. Simply use the same solution for each device/OS (Windows and Mac OS, iOS and Android).</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<span class="number">3</span>
-				<h3>It's the title number 3</h3>
-				<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
-			</td>
-			<td>
-				<span class="number">4</span>
-				<h3>It's the title number 4</h3>
-				<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<span class="number">5</span>
-				<h3>It's the title number 5</h3>
-				<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
+				<h3>Controlling your software</h3>
+				<p>Manage over the Internet security policies and updates of software that use your digital certificates.</p>
 			</td>
 			<td>
 				<span class="number">6</span>
-				<h3>It's the title number 6</h3>
-				<p>qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd qdcqd fq fe fqfdsf dqf qf qdf fdfdfdfsef fqfdsqfdsf fqfqdfqd fqfdqf fqfdqfqd</p>
+				<h3>Multi-population strategy</h3>
+				<p>Segment your population and choose the most appropriate device in terms of cost and security for each one.</p>
 			</td>
 		</tr>
 	</tbody>
 </table>
 
-<div class="clear"></div>
+

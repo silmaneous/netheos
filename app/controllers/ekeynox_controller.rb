@@ -5,6 +5,10 @@ class EkeynoxController < ApplicationController
     @title = @@title
   end
   
+  def apps
+      @title = @@title
+  end
+
   def usb_trust
       @title = @@title
   end
@@ -16,7 +20,21 @@ class EkeynoxController < ApplicationController
       @footer = false
   end
 
-  def mobile_sdk_apps
+  def usb_applications
+      @title = @@title
+      
+      @header = false
+      @footer = false
+  end
+
+  def usb_management
+      @title = @@title
+      
+      @header = false
+      @footer = false
+  end
+
+  def mobile_sdk
     @title = @@title
   end
 

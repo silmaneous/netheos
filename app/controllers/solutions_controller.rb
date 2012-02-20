@@ -9,11 +9,11 @@ class SolutionsController < ApplicationController
     @title = @@title
   end
 
-  def data_leakage_protection
+  def document_privacy_protection
     @title = @@title
   end
 
-  def digital_signature
+  def instant_contract_signing
     @title = @@title
   end
 
@@ -25,7 +25,7 @@ class SolutionsController < ApplicationController
     @title = @@title
   end
   
-  def software_editors
+  def software_compagnies
     @title = @@title
   end
   
