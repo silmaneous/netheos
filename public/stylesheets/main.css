@@ -57,7 +57,7 @@ table {
 body {	
 	height: 100%;
 	
-	color: #333333;
+	color: #666666;
 	text-align: center;
 	background-color: #f8f8f8;
 	/* background-color: #eeeeee; */
@@ -223,7 +223,7 @@ footer a:hover {
 p {
 	margin-bottom: 10px;
 	
-	color: #333333;
+	color: #666666;
 	font-size: 16px;	
 	text-align: justify;
 }
@@ -245,7 +245,7 @@ ul > li {
 /** Common Links **/
 
 a, a:visited {
-	color: #777777;	
+	color: #666666;	
 	text-decoration: none;
 }
 
@@ -254,6 +254,7 @@ a:hover {
 }
 
 .learn_more {
+	text-decoration: underline;
 	/* padding-right: 15px; */
 	/* background : transparent url(../images/follow.png) no-repeat right center; */	
 }
@@ -265,6 +266,11 @@ a:hover {
 
 /** Img **/
 
+.float-right {
+	float: right;
+
+	margin: 0 0 0 30px;
+}
 .diagram {
 	float: right;
 
@@ -275,7 +281,7 @@ a:hover {
 .picto {
 	float: left;
 	
-	margin: -10px 30px 0 0;	
+	margin: 0 30px 20px 0;	
 }
 
 
@@ -373,28 +379,6 @@ a:hover {
 }
 
 
-/** Home boxs ***/
-
-.box {
-    float: left;
-
-	width: 230px;
-	height: 160px;
-	margin: 0 10px 0 0;
-	
-	background: transparent;	
-}
-
-.box-last {
-    float: left;
-
-	margin: 0;
-	width: 230px;
-	height: 160px;
-	
-	background: transparent;	
-}
-
 /** eKeynox steps ***/
 
 .step {
@@ -403,7 +387,7 @@ a:hover {
 	width: 310px;
 	height: 404px;
 	margin: 45px 0 30px 0;
-	
+
 	background: transparent;	
 }
 
@@ -414,8 +398,11 @@ a:hover {
 	height: 404px;
 	margin: 45px 10px 30px 10px;
 	
+	color: #cccccc;
+	font-size: 12px;
 	background: transparent;	
 }
+
 
 /** List **/
 
@@ -470,6 +457,7 @@ table > tbody p {
 	text-align: justify;
   	font-family: "Lucida Grande", Verdana, sans-serif;
 }
+
 
 /** Stuffs **/
 
