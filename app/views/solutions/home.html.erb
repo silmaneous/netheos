@@ -1,3 +1,19 @@
+<script type="text/javascript">
+jQuery(function($){
+
+    $('a.zoombox').zoombox({
+        theme       : 'lightbox',        //available themes : zoombox, lightbox, prettyphoto, darkprettyphoto, simple
+        opacity     : 0.8,              // Black overlay opacity
+        duration    : 600,              // Animation duration
+        animation   : true,             // Do we have to animate the box ?
+        width       : 1000,              // Default width
+        height      : 400,              // Default height
+        gallery     : false,             // Allow gallery thumb view
+        autoplay : false                // Autoplay for video
+    });
+});
+</script>
+
 <div class="splash" style="background: transparent url(../images/splash-solutions.png) no-repeat top left">
 	<h1>Smart solutions<br/>to Trust online Services</h1>
 </div>
@@ -17,43 +33,43 @@
 		<tr>
 			<td>
 				<% picto = image_tag("trusted_browser.png", :alt => "Web Access Protection", :class => "picto") %>
-				<%= link_to picto, solutions_web_access_protection_path %>
+				<%= link_to picto, solutions_web_access_protection_path, :class => "zoombox h340" %>
 				<h3>Web Access Protection</h3>
-				<p>Strong authentication + MitB protection on PC/Mac, USB devices, smartphones and tablets. <%= link_to "Learn more.", solutions_web_access_protection_path, :class => "learn_more" %></p>
+				<p>Strong authentication + MitB protection on PC/Mac, USB devices, smartphones and tablets. <%= link_to 'Learn more »', solutions_web_access_protection_path, :class => "zoombox h340" %></p>
 			</td>
 			<td>
 				<% picto = image_tag("financial_institution.png", :alt => "Financial Institutions", :class => "picto") %>
-				<%= link_to picto, solutions_financial_institutions_path %>
+				<%= link_to picto, solutions_financial_institutions_path, :class => "zoombox h430" %>
 				<h3>Financial Institutions</h3>
-				<p>Online fraud protection and innovation for account inquiry, transactions and contrat signing. <%= link_to "Learn more.", solutions_financial_institutions_path, :class => "learn_more"%></p>
+				<p>Online fraud protection and innovation for account inquiry, transactions and contrat signing. <%= link_to "Learn more »", solutions_financial_institutions_path, :class => "zoombox h430" %></p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<% picto = image_tag("trusted_viewer.png", :alt => "Document Privacy", :class => "picto") %>
-				<%= link_to picto, solutions_document_privacy_path %>
+				<%= link_to picto, solutions_document_privacy_path, :class => "zoombox h330" %>
 				<h3>Document Privacy</h3>
-				<p>Document encryption + leakage protection on PC/Mac, USB devices, smartphones and tablets. <%= link_to "Learn more.", solutions_document_privacy_path, :class => "learn_more" %></p>
+				<p>Document encryption + leakage protection on PC/Mac, USB devices, smartphones and tablets. <%= link_to "Learn more »", solutions_document_privacy_path, :class => "zoombox h330" %></p>
 			</td>
 			<td>
 				<% picto = image_tag("device_manufacturer.png", :alt => "Device Manufacturers (OEM)", :class => "picto") %>
-				<%= link_to picto, solutions_device_manufacturers_path %>
+				<%= link_to picto, solutions_device_manufacturers_path, :class => "zoombox h330" %>
 				<h3>Device Manufacturers <span style="font-size: 16px">(OEM)</span></h3>
-				<p>Ergonomic and powerful software to increase the value-added of hardware security devices. <%= link_to "Learn more.", solutions_device_manufacturers_path, :class => "learn_more" %></p>
+				<p>Ergonomic and powerful software to increase the value-added of hardware security devices. <%= link_to "Learn more »", solutions_device_manufacturers_path, :class => "zoombox h330" %></p>
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<% picto = image_tag("signature.png", :alt => "Instant Contract Signing", :class => "picto") %>
-				<%= link_to picto, solutions_instant_contract_signing_path %>
+				<%= link_to picto, solutions_instant_contract_signing_path, :class => "zoombox h370" %>
 				<h3>Instant Contract Signing</h3>
-				<p>Digital signature on PC/Mac and USB devices. Digital + handwritten signature on smartphones and tablets. <%= link_to "Learn more.", solutions_instant_contract_signing_path, :class => "learn_more" %></p>
+				<p>Digital signature for 100% paperless process on PC/Mac, USB devices, smartphones and tablets. <%= link_to "Learn more »", solutions_instant_contract_signing_path, :class => "zoombox h370" %></p>
 			</td>
 			<td>
 				<% picto = image_tag("software_compagny.png", :alt => "Software Compagnies (OEM)", :class => "picto") %>
-				<%= link_to picto, solutions_software_compagnies_path %>
+				<%= link_to picto, solutions_software_compagnies_path, :class => "zoombox h330" %>
 				<h3>Software Compagnies <span style="font-size: 16px">(white label)</span></h3>
-				<p>Easy to use software tools to take full advantage of digtal certificates in mobile applications. <%= link_to "Learn more.", solutions_software_compagnies_path, :class => "learn_more" %></p>
+				<p>Easy to use software tools to take full advantage of digtal certificates in mobile applications. <%= link_to "Learn more »", solutions_software_compagnies_path, :class => "learn_more zoombox h330" %></p>
 			</td>
 		</tr>
     </tbody>

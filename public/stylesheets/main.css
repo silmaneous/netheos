@@ -59,6 +59,13 @@ body {
 	
 	color: #666666;
 	text-align: center;
+}
+
+body {	
+	height: 100%;
+	
+	color: #666666;
+	text-align: center;
 	background-color: #f8f8f8;
 	/* background-color: #eeeeee; */
 	/* background-color: #f8f8f8; */
@@ -251,12 +258,6 @@ a, a:visited {
 
 a:hover {
 	text-decoration: underline;
-}
-
-.learn_more {
-	text-decoration: underline;
-	/* padding-right: 15px; */
-	/* background : transparent url(../images/follow.png) no-repeat right center; */	
 }
 
 .email_link {
@@ -471,3 +472,6 @@ table > tbody p {
 	border-radius: 10px;
 }
 
+.twtr-widget h4 {
+text-align: left !important;
+}
