@@ -76,8 +76,19 @@ body, h1, h2, h3, h4, h5 {
 	font-family: "Lucida Grande", Verdana, sans-serif;
 }
 
+
+/** Titles **/
+
 h1 {
-	/* Splashs section */
+
+	color: #333333;
+	font-size: 46px;
+	font-weight: 500;
+	text-align: left;
+	line-height: 1.1em;
+	letter-spacing: -1px;
+	font-style: normal;
+	font-family: Times, Georgia, serif;
 }
 
 h2 {
@@ -92,7 +103,6 @@ h2 {
 	font-style: normal;
 	letter-spacing: -1px;
 	border-bottom: solid 1px #ff8f00 ;
-  	font-family: "Lucida Grande", Verdana, sans-serif;
 }
 
 h3 {
@@ -103,7 +113,6 @@ h3 {
 	font-weight: 500;
 	line-height: 1.1em;
 	font-style: normal;
-  	font-family: "Lucida Grande", Verdana, sans-serif;
 }
 
 h4 {
@@ -116,7 +125,6 @@ h4 {
 	line-height: 1.1em;
 	font-style: normal;
 	letter-spacing: -1px;
-	font-family: Candara, "Lucida Grande", verdana, sans-serif;
 }	
 
 
@@ -190,7 +198,7 @@ header > nav a:hover {
 /** Footer **/
 
 footer {
-	bottom: 0px;
+	bottom: -30px;
 
     width: 100%;
 	height: 30px;	
@@ -219,6 +227,8 @@ footer a:hover {
 	margin-left: -475px;
 
 	width: 950px;
+	height: 100%;
+	min-height: 100%;
 	font-size: 16px;
 	text-align: justify;
 	font-style: normal;	
@@ -320,35 +330,16 @@ a:hover {
 	margin: 0 0 30px 0;
 }
 
-
-.splash h1 {
+.splash-text {
 	position: relative;
 	left: 60px;
 	top: 30%;
-	
-	color: #333333;
-	font-size: 46px;
-	font-weight: 500;
-	text-align: left;
-	line-height: 1.1em;
-	letter-spacing: -1px;
-	font-style: normal;
-	font-family: Times, Georgia, serif;
 }
 
-.splash .h1-reverse {
+.splash-text-reverse {
 	position: relative;
 	left: 400px;
-	top: 120px;
-	
-	color: #333333;
-	font-size: 46px;
-	font-weight: 500;
-	text-align: left;
-	line-height: 1.1em;
-	letter-spacing: -1px;
-	font-style: normal;
-	font-family: Times, Georgia, serif;
+	top: 140px;
 }
 
 .splash ul {

@@ -2,20 +2,18 @@
 jQuery(function($){
 
     $('a.zoombox').zoombox({
-        theme       : 'lightbox',        //available themes : zoombox, lightbox, prettyphoto, darkprettyphoto, simple
-        opacity     : 0.7,              // Black overlay opacity
-        duration    : 600,              // Animation duration
-        animation   : true,             // Do we have to animate the box ?
-        width       : 1000,              // Default width
-        height      : 400,              // Default height
-        gallery     : true,             // Allow gallery thumb view
-        autoplay : false                // Autoplay for video
+        theme       : 'lightbox',  // Available themes : zoombox, lightbox, prettyphoto, darkprettyphoto, simple
+        opacity     : 0.8,
+        duration    : 600,
+        animation   : true,
     });
 });
 </script>
 
 <div class="splash" style="background: transparent url(../images/splash-ekeynox.png) no-repeat top left">
-	<h1>Protect your sensitive</br>online services</h1>
+	<div class="splash-text">
+		<h1>Build and Manage your<br/>Mobile Application Security</h1>
+	</div>
 	<ul>
 		<li><%= link_to "eK Apps", ekeynox_apps_path%></li>
 		<li><%= link_to "eK USB Trust", ekeynox_usb_trust_path %></li>
