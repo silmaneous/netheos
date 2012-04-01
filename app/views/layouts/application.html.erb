@@ -32,8 +32,10 @@
 	</script>
 </head>
 <body>
-	<%= if header then render 'layouts/header' end %>
-	<div id="page"><%= yield %></div>
+	<div id="wrap">
+		<%= if header then render 'layouts/header' end %>
+		<div id="page" class="clearfix"><%= yield %></div>
+	</div>
 	<%= if footer then render 'layouts/footer' end %>
 </body>
 </html>

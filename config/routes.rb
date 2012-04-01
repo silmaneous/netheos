@@ -1,6 +1,7 @@
 Netheos::Application.routes.draw do
 
   match '/about', :to => 'page#about'
+  match '/privacy', :to => 'page#privacy'
 
   match '/services', :to => 'services#home'
 
