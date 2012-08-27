@@ -8,7 +8,7 @@ class PageController < ApplicationController
   end
 
   def contact
-    @title = "Contact"
+    @title = "Contacts"
   end
   
 end
