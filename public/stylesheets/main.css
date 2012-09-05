@@ -167,14 +167,14 @@ header > nav > ul {
 header > nav > ul > li {
 	display: inline-block;
 
-	margin-top: 18px;
+	margin-top: 6px;
 
 	color: #eeeeee;
 	list-style-type: none;
 }
 
 header > nav a, header > nav a:visited {
-	margin-right: 25px;
+	margin-right: 40px;
 	padding: 16px 0px 15px 0px;
 
 	color: #cccccc;
@@ -230,8 +230,9 @@ footer a:hover {
 	text-align: justify;
 	font-style: normal;	
 	line-height: 1.3em;
+    background-color: transparent;
+
 	font-family: "Lucida Grande", Verdana, sans-serif;
-	background-color: transparent;
 }
 
 .clearfix:after { /* sticky footer */
@@ -246,6 +247,46 @@ footer a:hover {
 .clearfix {display: block;}
 /* End hide from IE-mac */
 
+.solutions, .partners {
+    margin-top:20px;
+}
+
+.solutions div {
+    float : left;
+    width : 28%;
+    margin-right:5%;
+    height : 200px;
+    padding: 1%;
+    background-color: transparent;
+}
+
+.solutions div:last-of-type, .partners div:last-of-type {
+    margin-right:0%;
+}
+
+.partners {
+    text-align: center;
+}
+
+.partners div {
+    display: inline-block;
+    width : 48px;
+    height : 48px;
+    margin-right:5%;
+    background-color: transparent;
+}
+
+.curved {
+    border: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    border-top: 1px solid #DDDDDD;
+    background-image: -webkit-linear-gradient(top, #F9F9F9 50%, #F0F0F0 100%);
+}
 
 /** Common Syntax **/
 
@@ -462,7 +503,6 @@ table > tbody p {
   	font-family: "Lucida Grande", Verdana, sans-serif;
 }
 
-
 /** Stuffs **/
 
 .clear {
@@ -477,4 +517,28 @@ table > tbody p {
 
 .twtr-widget h4 {
 text-align: left !important;
+}
+
+div.carouselPagination span.carouselPage {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    overflow: hidden;
+    border: 2px solid #FF9100;
+    cursor: pointer;  
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;  
+}
+
+div.carouselPagination span.carouselPage:hover:not(.active) {
+    background: #FFD192;
+}
+div.carouselPagination span.carouselPage.active {
+    background: #FF9100;
+}
+
+.highlight {
+    color: #FF9100 !important;
 }

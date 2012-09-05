@@ -12,9 +12,9 @@
 		<% logo = image_tag("logo.png", :alt => "Netheos") %>
 		<%= link_to logo, root_path %>
 		<ul>
-			<li><%= link_to "Solutions", solutions_path %></li>
-			<li><%= link_to "Products", ekeynox_path %></li>
-			<li><%= link_to "Services", services_path %></li>
+			<li><%= link_to "On-line<br/>banking".html_safe, banking_path, :class => highlight(banking_path) %></li>
+			<li><%= link_to "On-line<br/>payment".html_safe, payment_path, :class => highlight(payment_path) %></li>
+			<li><%= link_to "On-line<br/>subscription".html_safe, subscription_path, :class => highlight(subscription_path) %></li>
 		</ul>
 	</nav>
 </header>

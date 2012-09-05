@@ -1,43 +1,62 @@
-<div class="splash" style="background: transparent url(../images/splash-home.png) no-repeat top left">
+<!--div class="splash" style="background: transparent url(../images/splash-home.png) no-repeat top left">
 	<div class="splash-text">
 		<h1>Trust and Privacy over the Internet</h1>
 		<p>Software so that companies can give clients confidence<br/>in the services they offer over the Internet</p>
 	</div>
+</div-->
+
+<div id="homesplash" class="splash" style="background: transparent url(../images/splash-home.png) no-repeat top left">	<div>
+		<h1>Build and Manage your<br/>Mobile Application Security</h1>
+	</div>
+	<div>
+		<h1>Build and Manage your<br/>Mobile Application Security</h1>
+	</div>
+	<div>
+		<h1>Build and Manage your<br/>Mobile Application Security</h1>
+	</div>
+	<!--ul>
+		<li><%= link_to "eK Apps", ekeynox_apps_path%></li>
+		<li><%= link_to "eK USB Trust", ekeynox_usb_trust_path %></li>
+		<li><%= link_to "eK Mobile SDK", ekeynox_mobile_sdk_path %></li>
+	</ul-->
+</div>
+<div class="solutions clearfix">
+    <div class="banking curved">
+        <p>
+            <% picto = image_tag("trusted_browser.png", :alt => "Online-banking", :class => "picto") %>				
+			<%= link_to picto, banking_path %>
+			Build a trusted channel between you and your customers and deploy secure innovative mobile services.
+        </p>
+    </div>
+    <div class="payment curved">
+        <p>
+            <% picto = image_tag("trusted_browser.png", :alt => "Online-payment", :class => "picto") %>				
+			<%= link_to picto, payment_path %>
+			Reduce the risk of fraud and 
+        </p>    
+    </div>
+    <div class="subscription curved">
+        <p>
+            <% picto = image_tag("trusted_browser.png", :alt => "Online-subscription", :class => "picto") %>				
+    		<%= link_to picto, subscription_path %>
+    		Convert your prospects into customers and reduce yours costs with paperless on-line subscription.
+        </p>
+    </div>    
+</div>
+<div class="partners">
+    <div class="logo">
+        Logo 1
+    </div>
+    <div class="logo">
+        Logo 2
+    </div>
+    <div class="logo">
+        Logo 3
+    </div>    
 </div>
 
 
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-
-<div class="float-right">
-	<script>
-	new TWTR.Widget({
-	  version: 2,
-	  type: 'profile',
-	  rpp: 3,
-	  interval: 30000,
-	  width: 300,
-	  height: 280,
-	  theme: {
-	    shell: {
-	      background: '#333333',
-	      color: '#ffffff'
-	    },
-	    tweets: {
-	      background: '#444444',
-	      color: '#ffffff',
-	      links: '#ff9100'
-	    }
-	  },
-	  features: {
-	    scrollbar: true,
-	    loop: false,
-	    live: true,
-	    behavior: 'all'
-	  }
-	}).render().setUser('netheos').start();
-	</script>
-</div>
-
+<!--
 	<% picto1 = image_tag("../images/ekeynox.png", :alt => "ekeynox", :class => "picto") %>
 	<%= link_to picto1, ekeynox_path %>
 	<p><strong>The eKeynox product family</strong> that combines innovation and ease-of-use to deploy digital certificates on a variety of computing platforms: PC and Mac, USB flash drive/token, smartphones and tablets. From strong authentication to digital signatures and data encryption, eKeynox leverages the Public Key Infrastructure (PKI) by creating new uses for new markets. <%= link_to "Learn more.", ekeynox_path, :class => "learn_more" %></p>
@@ -47,6 +66,6 @@
 	<% picto2 = image_tag("financial_institution1_5.png", :alt => "Financial Institutions", :class => "picto") %>
 	<%= link_to picto2, solutions_financial_institutions_path %>
 	<p><strong>You want protection from online fraud</strong>, to enhance already-deployed services or develop significant innovation? Netheos can help transform the relationship you've built with your corporate and retail clients. Our solutions enable you to offer clients and partners a strong digital identity and smart software that will not only make their lives easier, but also provide you with the security you need. <%= link_to "Learn more.", solutions_financial_institutions_path, :class => "learn_more" %></p>
-
+-->
 <div class="clear"></div>
 

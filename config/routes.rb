@@ -20,6 +20,14 @@ Netheos::Application.routes.draw do
   match '/solutions/financial_institutions', :to => 'solutions#financial_institutions'
   match '/solutions/device_manufacturers', :to => 'solutions#device_manufacturers'
   match '/solutions/software_compagnies', :to => 'solutions#software_compagnies'
+  
+  match '/banking', :to => 'banking#home'
+  
+  match '/payment', :to => 'payment#home'
+  
+  match '/subscription', :to => 'subscription#home'
+  
+
 
   root :to => 'page#home'
 
