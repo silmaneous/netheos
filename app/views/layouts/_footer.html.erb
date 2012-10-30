@@ -1,5 +1,30 @@
 <footer>
-	<%= link_to "About", about_path %>&nbsp&nbsp&nbsp
-	<%= link_to "Privacy policy", privacy_path %>&nbsp&nbsp&nbsp
-	<%= link_to "Logos", "/images/netheos_logos.zip" %>
+	<div class="footer-content">
+		<ul>
+			<li><%= link_to "PRODUCTS", ekeynox_path %></li>
+			<li><%= link_to "SOLUTIONS", solutions_path %></li>
+			<li><%= link_to "SERVICES", services_path %></li>
+			<li><%= link_to "ABOUT", about_path %></li>
+		</ul>
+
+		<ul>
+			<li>© 2012 eKeynox</li>
+			<li><%= link_to "Privacy policy", privacy_path %></li>			
+			<li><%= link_to "Nos logos", "/images/netheos_logos.zip" %></li>
+		</ul>
+
+		<ul style="margin-left:200px">
+			<li>Netheos</li>
+			<li>1025, avenue Henri Becquerel</li>
+			<li>Parc Club du Millénaire - Bât 18</li>
+			<li>34 000 Montpellier - France</li>
+			
+		</ul>
+
+		<ul>
+			<li><%= link_to "contact@netheos.net", "#", :class => "email_link" %></li>
+			<li>Call us: +33 9 63 50 03 30</li>
+			<li>8AM - 6PM CST</li>
+		</ul>
+	</div>
 </footer>

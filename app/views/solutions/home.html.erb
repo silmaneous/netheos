@@ -15,11 +15,17 @@ jQuery(function($){
 </script>
 
 <div class="splash" style="background: transparent url(../images/splash-solutions.png) no-repeat top left">
-	<div class="splash-text">
-		<h1>Smart solutions<br/>to Trust online Services</h1>
+	<div class="splash-menu">
+		<div class="splash-titre">Solutions</div>
+		<ul>
+			<li><%= link_to "ON-LINE BANKING", banking_path %></li>
+			<li><%= link_to "ON-LINE PAYMENT", payment_path %></li>
+			<li><%= link_to "ON-LINE SUBSCRIPTION", subscription_path %></li>
+		</ul>
 	</div>
 </div>
 
+<h1>Smart solutions<br/>to Trust online Services</h1>
 
 <p>Netheos develops innovative solutions that are easy to use, and adapted to today's issues in e|m-commerce and e|m-banking. We also offer packaged solutions to handle the security issues companies encounter with mobility models and internal paperless processes.</p>
 <p>These solutions are based on the use of electronic certificates and secure software mostly embedded on personal devices such as USB flash drives/tokens (PC/Mac), smartphones and tablets (iOS and Android).</p>

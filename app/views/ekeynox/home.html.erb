@@ -11,26 +11,33 @@ jQuery(function($){
 </script>
 
 <div class="splash" style="background: transparent url(../images/splash-ekeynox.png) no-repeat top left">
-	<div class="splash-text">
-		<h1>Build and Manage your<br/>Mobile Application Security</h1>
+	<div class="splash-menu">
+		<ul>
+			<li><%= link_to "OVERVIEW" %></li>
+			<li><%= link_to "WHY USE EKEYNOX" %></li>
+			<br/>
+			<li><%= link_to "MOBILE SDK" %></li>
+			<li><%= link_to "MANAGEMENT SYSTEM" %></li>
+		</ul>
 	</div>
-	<ul>
-		<li><%= link_to "eK Apps", ekeynox_apps_path%></li>
-		<li><%= link_to "eK USB Trust", ekeynox_usb_trust_path %></li>
-		<li><%= link_to "eK Mobile SDK", ekeynox_mobile_sdk_path %></li>
-	</ul>
+	<h1 style="top:125px; left:60px; font-family: candara; color:#666666; font-size: 35px; letter-spacing: 1px; font-weight: 400;">Mobile Security</h1>
+	<h1 style="top:105px; left:60px; font-family: candara; color:#f46700; font-size: 35px; letter-spacing: 1px; font-weight: 600;">Framework</h1>
 </div>
 
 <% diagram = image_tag("../images/ekeynox_big_picture.png", :alt => "ekeynox", :class => "diagram") %>
 <%= link_to diagram, "../images/ekeynox_big_picture.png", :class => "zoombox" %>
 
-<p>The eKeynox product family that combines innovation and ease-of-use to deploy digital certificates on a variety of computing platforms: PC and Mac, USB flash drive/token, smartphones and tablets.</p>
-<p>From strong authentication to digital signatures and data encryption, eKeynox leverages the Public Key Infrastructure (PKI) by creating new uses for new markets.</p>
-<p>Client software in the eKeynox family, related security policies and their digital certificates are deployed and managed using the eKeynox Management System. This server-side solution can be integrated easily at your company site, and is also available as a service from our partners.</p>
+<h1>Build and Manage the Security<br/>of your Mobile Applications</h1>
+
+<p>Because digital certificates and Public Key Infrastructure are the best technology to secure and push for on-line financial services, we create a product family that combines innovation and ease-of-use to deploy and manage digital certificate direcly in mobile applications. And because digital certificates themself do nothing, this family include a Mobile SDK and web SDK to quickly and easily create new financial applications, mobiles apps or web apps. eKeynox leverages PKI by creating new uses for new financial markets.</p>
 
 <div class="clear"></div>
 
-<h4>A new approach to PKI</h4>
+<div class="hop"></div>
+
+<h1 style="text-align:center;">A new approach to PKI</h1>
+
+<p>To reduce on-line fraud but also costs, and develop significant business innovation in a strict legal environment, digital certificate is the best choice. however PKI is a technology of experts that ask a strong know-how. eKeynox change PKI and la rend facile à utiliser.</p>
 
 <table>
     <tbody>
@@ -73,4 +80,11 @@ jQuery(function($){
 	</tbody>
 </table>
 
+<div class="hop"></div>
 
+<h1>eKeynox Mobile SDK</h1>
+
+<% diagram = image_tag("../images/ekeynox_cases.png", :alt => "ekeynox", :class => "diagram") %>
+<%= link_to diagram, "../images/ekeynox_cases.png", :class => "zoombox" %>
+
+<h1>eKeynox Management System</h1>

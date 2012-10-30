@@ -11,7 +11,7 @@
 			var parentWidth = $parent.width();
 			var $pagination = $parent.siblings('.carouselPagination');
 			if($pagination.length == 0)
-			     $parent.after('<div class="carouselPagination" style="text-align:center;height:30px;padding-top:10px"/>');
+			     $parent.after('<div class="carouselPagination" style="text-align:center;height:30px;padding-top:0px"/>');
 			$pagination = $parent.siblings('.carouselPagination').empty(); 
 			$this.css('position','absolute');
 			$parent.css('position','relative');
