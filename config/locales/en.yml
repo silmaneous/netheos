@@ -1,5 +1,16 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+    hello: "Bonjour"
+    home: "Trust & Privacy"
+
+    banking: "M-BANKING"
+    payment: "M-PAYMENT"
+    contract: "M-CONTRACT"
+
+    solutions: "SOLUTIONS"
+    ekeynox: "EKEYNOX"
+    services: "SERVICES"
+    about: "A PROPOS"
+    
+    privacy: "Données Privées"
+    logos: "Nos logos"
+    call: "Tél. "

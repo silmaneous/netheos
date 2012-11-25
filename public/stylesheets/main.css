@@ -74,7 +74,7 @@ body, p, h1, h2, h3, h4, h5 {
 /** Titles **/
 
 h1 {
-	margin: 0 0 20px 0;
+	margin: 30px 0 20px 0;
 
 	color: #333333;
 	font-size: 35px;
@@ -85,20 +85,13 @@ h1 {
 	font-style: normal;
 }
 
-/*
-h2 {
-	padding: 0 0 3px 0;
-	margin: 30px 0 20px 0;
-	
-	color: #333333;
-	font-size: 22px;
-	text-align: left;
-	font-weight: 500;
-	line-height: 1.1em;
-	font-style: normal;
-	letter-spacing: -1px;
-	border-bottom: solid 1px #ff8f00 ;
-}*/
+.h1-baseline {
+	margin-left: 15px;
+
+	color: #4584d0;
+	font-size: 16px;
+	font-weight: 200;
+}
 
 h2 {
 	padding: 0 0 3px 0;
@@ -136,6 +129,84 @@ h4 {
 	font-style: normal;
 	letter-spacing: -1px;
 }	
+
+
+/** Common Syntax **/
+
+p {
+	margin-bottom: 10px;
+	text-align: justify;
+
+	color: #888888;
+	font-size: 16px;	
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+ul {
+	margin-left: 10px;
+	
+	text-align: justify;
+	list-style-position: inside;
+}
+
+ul > li {
+	margin-bottom: 10px;
+
+	color: #888888;
+	list-style-type: square;
+}
+
+
+/** Common Links **/
+
+a, a:visited {
+	color: #ff8f00;	
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.email_link {
+	text-decoration: underline;
+}
+
+
+/** Common Img **/
+
+/**.float-right {
+	float: right;
+
+	margin: 0 0 0 30px;
+}**/
+
+.diagram-r {
+	float: right;
+
+	width: 350px;
+	margin: 30px 0 30px 100px;	
+}
+
+.diagram-l {
+	float: left;
+
+	width: 350px;
+	margin: 30px 100px 30px 0;	
+}
+
+.picto-r {
+	float: right;
+
+	margin: 10px 0px 10px 80px;	
+}
+
+.picto-l {
+	float: left;
+	
+	margin: 10px 80px 10px 0px;	
+}
 
 
 /** Header **/
@@ -192,10 +263,7 @@ header > nav a, header > nav a:visited {
 
 	color: #aaaaaa;
 	font-size: 18px;
-
 	letter-spacing: 2px;
-
-
 	text-decoration: none;
 	font-family: Candara, sans-serif;
 }
@@ -271,11 +339,11 @@ footer > .footer-content {
 	margin-left: -475px;
 	padding-bottom: 240px; /* must be same height as the footer + 40px */
 	
-	font-size: 16px;
 	text-align: justify;
-	font-style: normal;	
-	line-height: 1.3em;
-    background-color: transparent;
+	color: #888888;
+	font-size: 16px;	
+	font-weight: 300;
+	line-height: 1.5em;
 }
 
 .solutions {
@@ -292,79 +360,6 @@ footer > .footer-content {
 
 .solutions div:last-of-type {
     margin-right:0%;
-}
-
-/*
-.partners {
-    text-align: center;
-}
-
-.partners div {
-    display: inline-block;
-}*/
-
-
-/** Common Syntax **/
-
-p {
-	margin-bottom: 10px;
-	text-align: justify;
-
-	color: #888888;
-	font-size: 16px;	
-	font-weight: 350;
-	line-height: 1.3em;
-}
-
-ul {
-	margin-left: 10px;
-	
-	text-align: justify;
-	list-style-position: inside;
-}
-
-ul > li {
-	margin-bottom: 10px;
-
-	color: #888888;
-	list-style-type: square;
-}
-
-
-/** Common Links **/
-
-a, a:visited {
-	color: #999999;	
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-.email_link {
-	text-decoration: underline;
-}
-
-
-/** Common Img **/
-
-.float-right {
-	float: right;
-
-	margin: 0 0 0 30px;
-}
-.diagram {
-	float: right;
-
-	width: 400px;
-	margin: 0 0 0 30px;	
-}
-
-.picto {
-	float: left;
-	
-	margin: 0 30px 20px 0;	
 }
 
 
@@ -396,39 +391,20 @@ a:hover {
 
 /** Splashs **/
 
-.splash {
-	width: 975px;
-	height: 320px;
-	margin: 5px 0 30px 0;
-	
-	font-family: sans-serif;
-}
-
 #splash-home > div { /** Home **/
     height:450px;
 }
 
-.splash h1 {
+#splash-home h1 {
 	position: relative;
 	left: 480px;
-	top: 30%;
+	top: 100px;
 }
 
-.splash h2 {
-	position: relative;
-	left: 20px;
-	top: 60px;
-	
-	width: 230px;
-
-	color: #ffffff;
-	text-align: left;
-}
-
-.splash p {
+#splash-home p {
 	position: relative;
 	left: 480px;
-	top: 40%;
+	top: 120px;
 		
 	color: #ff8f00;
 	font-size: 20px;
@@ -436,38 +412,18 @@ a:hover {
 	text-align: left;
 }
 
-.splash-menu {
-	float: left;
+#splash {
+	width: 975px;
+	height: 320px;
+	margin: 5px 0 50px 0;
 	
-	padding: 80px 0 0 0;
-	width: 260px;
-}
-
-.splash ul {
-	margin-right: 10px;
-	text-align: right;
-}
-
-.splash ul li {
-	list-style-type: none;
-}
-
-.splash ul li > a, .splash ul li > a:visited {
-	color: #ffffff;
-	font-size: 16px;
-	font-weight: 200;
-	text-decoration: none;
 	font-family: sans-serif;
 }
 
-.splash ul li > a:hover {
-	color: #ff8f00;
-}
-
-.splash-titre {
+#splash h1 {
 	position: relative;
-	left: 280px;
-	top: 15px;
+	left: 90px;
+	top: 90px;
 	
 	width: 450px;
 	text-align: left;
@@ -476,8 +432,44 @@ a:hover {
 	font-size: 35px;
 	letter-spacing: 2px;
 	text-decoration: none;
-	font-family: sans-serif;	
-} 
+}
+
+#splash p {
+	position: relative;
+	left: 90px;
+	top: 90px;
+		
+	color: #ff8f00;
+	font-size: 20px;
+	letter-spacing: 1px;	
+	text-align: left;	
+}
+
+#splash ul {
+	position: relative;
+	float: left;
+	top: 80px;
+	
+	width: 240px;
+	text-align: right;
+}
+
+#splash ul li {
+	list-style-type: none;
+}
+
+#splash ul li > a, .splash ul li > a:visited {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 200;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+#splash ul li > a:hover {
+	color: #ff8f00;
+}
+
 
 /** eKeynox steps ***/
 
@@ -488,7 +480,7 @@ a:hover {
 	height: 404px;
 	margin: 45px 0 30px 0;
 
-	background: transparent;	
+	background: transparent;
 }
 
 .step-middle {
@@ -543,7 +535,7 @@ table > tbody .picto {
 	float: left;
 	top: 0px;
 
-	margin: 10px 20px 10px 0;
+	margin: 10px 20px 20px 0;
 }
 
 table > tbody h3 {
@@ -551,7 +543,7 @@ table > tbody h3 {
 }
 
 table > tbody p {	
-	color: #333333;
+	color: #888888;
 	font-size: 14px;
 	text-align: justify;
 }

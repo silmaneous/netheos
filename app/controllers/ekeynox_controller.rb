@@ -5,6 +5,13 @@ class EkeynoxController < ApplicationController
     @title = @@title
   end
   
+  def mobile_sdk_lb
+    @title = @@title
+    
+    @header = false
+    @footer = false
+  end
+
   def apps
       @title = @@title
   end

@@ -1,11 +1,21 @@
 Netheos::Application.routes.draw do
 
-  match '/about', :to => 'page#about'
-  match '/privacy', :to => 'page#privacy'
+
+  match '/solutions/banking', :to => 'pages#banking'
+  match '/solutions/payment', :to => 'pages#payment'
+  match '/solutions/contract', :to => 'pages#contract'
+  match '/ekeynox', :to => 'pages#ekeynox'
+
+  match '/lightbox/mobile_sdk_lb', :to => 'lightbox#mobile_sdk_lb'
+  match '/lightbox/solutions_lb', :to => 'lightbox#solutions_lb'
+
+  match '/about', :to => 'pages#about'
+  match '/privacy', :to => 'pages#privacy'
 
   match '/services', :to => 'services#home'
-
-  match '/ekeynox', :to => 'ekeynox#home'
+  
+  
+  
   match '/ekeynox/apps', :to => 'ekeynox#apps'
   match '/ekeynox/usb_trust', :to => 'ekeynox#usb_trust'
   match '/ekeynox/mobile_sdk', :to => 'ekeynox#mobile_sdk'
@@ -20,16 +30,8 @@ Netheos::Application.routes.draw do
   match '/solutions/financial_institutions', :to => 'solutions#financial_institutions'
   match '/solutions/device_manufacturers', :to => 'solutions#device_manufacturers'
   match '/solutions/software_compagnies', :to => 'solutions#software_compagnies'
-  
-  match '/banking', :to => 'banking#home'
-  
-  match '/payment', :to => 'payment#home'
-  
-  match '/subscription', :to => 'subscription#home'
-  
 
-
-  root :to => 'page#home'
+  root :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

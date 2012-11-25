@@ -1,16 +1,27 @@
+<script type="text/javascript">
+jQuery(function($){
+
+    $('a.zoombox').zoombox({
+        theme       : 'zoombox',  // Available themes : zoombox, lightbox, prettyphoto, darkprettyphoto, simple
+        opacity     : 0.8,
+        duration    : 600,
+        animation   : true,
+    });
+});
+</script>
+
 <footer>
 	<div class="footer-content">
 		<ul>
-			<li><%= link_to "PRODUCTS", ekeynox_path %></li>
-			<li><%= link_to "SOLUTIONS", solutions_path %></li>
-			<li><%= link_to "SERVICES", services_path %></li>
-			<li><%= link_to "ABOUT", about_path %></li>
+			<li><%= link_to t(:solutions), lightbox_solutions_lb_path, :class => "zoombox h170 w970" %></li>
+			<li><%= link_to t(:ekeynox), ekeynox_path %></li>
+			<li><%= link_to t(:about), about_path %></li>
 		</ul>
 
 		<ul>
 			<li>© 2012 eKeynox</li>
-			<li><%= link_to "Privacy policy", privacy_path %></li>			
-			<li><%= link_to "Nos logos", "/images/netheos_logos.zip" %></li>
+			<li><%= link_to t(:privacy), privacy_path %></li>			
+			<li><%= link_to t(:logos), "/images/netheos_logos.zip" %></li>
 		</ul>
 
 		<ul style="margin-left:200px">
@@ -22,9 +33,8 @@
 		</ul>
 
 		<ul>
-			<li><%= link_to "contact@netheos.net", "#", :class => "email_link" %></li>
-			<li>Call us: +33 9 63 50 03 30</li>
-			<li>8AM - 6PM CST</li>
+			<li><%= link_to "contact@netheos.net", "mailto:sales@netheos.net" %></li>
+			<li><%=t :call %>: +33 9 63 50 03 30</li>
 		</ul>
 	</div>
 </footer>

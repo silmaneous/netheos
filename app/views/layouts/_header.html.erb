@@ -8,25 +8,17 @@
 		</form>
 	</div>
 -->
-<!--
 	<nav>
-		<% logo = image_tag("logo.png", :alt => "Netheos") %>
+		<% logo = image_tag("netheos_logo.png", :alt => "Logo Netheos") %>
 		<%= link_to logo, root_path %>
 		<ul>
-			<li><%= link_to "On-line<br/>banking".html_safe, banking_path, :class => highlight(banking_path) %></li>
-			<li><%= link_to "On-line<br/>payment".html_safe, payment_path, :class => highlight(payment_path) %></li>
-			<li><%= link_to "On-line<br/>subscription".html_safe, subscription_path, :class => highlight(subscription_path) %></li>
-		</ul>
-	</nav>
--->
-	<nav>
-		<% logo = image_tag("netheos_logo.png", :alt => "Netheos") %>
-		<%= link_to logo, root_path %>
-		<ul>
-			<li><%= link_to "PRODUCTS", ekeynox_path %></li>
-			<li><%= link_to "SOLUTIONS", solutions_path %></li>
-			<li><%= link_to "SERVICES", services_path %></li>
-<!--		<li><%= link_to "ABOUT", about_path %></li>
+			<li><%= link_to t(:banking), solutions_banking_path %></li>
+			<li><%= link_to t(:payment), solutions_payment_path %></li>
+			<li><%= link_to t(:contract), solutions_contract_path %></li>
+			<li style="color: #ff8f00; font-size: 20px">|</li>
+			<li><%= link_to t(:ekeynox), ekeynox_path %></li>
+<!--		<li><%= link_to t(:services), services_path %></li>
+			<li><%= link_to t(:about), about_path %></li>
 -->
 		</ul>
 	</nav>
