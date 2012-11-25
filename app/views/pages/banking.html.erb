@@ -1,0 +1,100 @@
+<div id="splash" style="background: transparent url(../images/splash-banking.png) no-repeat top left">
+	<h1>m-banking</h1>
+	<p>Lutter contre la fraude en ligne<br/><span style='color:#666666;'>Augmenter vos revenus<br/>Réduire vos coûts</span></p>
+</div>
+
+<%= image_tag("../images/ekeynox_banking_cases.png", :alt => "Cas d'usage eKeynox pour la banque", :class => "diagram-r", :style => "margin-top: 10px;") %>
+
+<p>Développez simplement et rapidement une application mobile sécurisée vous permettant de lutter contre la fraude en ligne, mais également de réduire vos coûts et d’augmenter vos revenus en dématérialisant de nouveaux services bancaires.</p>
+
+<p>A la différence des logiciels rigides imposant leur propre expérience utilisateur, le Mobile Security Framework eKeynox autorise l’évolution de votre application, web ou native. Vous profitez de briques facilement intégrables rendant transparente la gestion de la sécurité, d’une signature électronique vous assurant sécurité technique mais aussi juridique (transactions et contrats).</p>
+
+<p>eKeynox vous permet de construire une relation de confiance durable entre vous et vos clients grâce à leur mobile.</p>
+
+<div class="clear"></div>
+
+<h1>La validation des transactions<span class="h1-baseline">Cas d'usage</span></h1>
+
+<p>Au delà de l’authentification au portail de banque en ligne, c’est la validation des transactions ordonnées depuis ce portail web qui nécessitent de s‘assurer de l’identité de son client via son mobile. Aujourd’hui, l’OTP SMS assure un 1er niveau de sécurité en fournissant un code de validation et surtout en rappelant les données de la transaction via un autre canal (au cas où le canal primaire ait été corrompu). Cela ne vous garanti pas de pouvoir exécuter votre ordre mais vous assure au moins de sa légitimité.</p>
+
+<p>Parce que l’OTP SMS pose des problèmes de coût, de sécurité et d’usage, les banques se tournent vers les alternatives logicielles sur smartphone (« Out Of Band Validation »).</p>
+
+<p>eKeynox permet de créer une liste des transactions validées ou à valider (paiement, prélèvement, virement, nouveau bénéficiaire, etc.). Une nouvelle transaction y est « poussée » de façon à avertir l’utilisateur qu’il doit entrer son code PIN pour la valider. Si plusieurs transactions restent à valider, il est également possible de saisir une seule fois son code PIN pour l’ensemble (validation par lot).</p>
+
+<p>Que l’application soit web ou native, eKeynox assure l’authentification forte de votre client sur son mobile, la confidentialité de l’ensemble des données qui y sont stockées, ainsi que la confidentialité et l’intégrité de l’ensemble des transactions échangées entre son mobile  et votre infrastructure serveur (connexion SSL mutuellement authentifiée). De plus, il permet d’associer durablement l’identité de votre client à la transaction qu’il valide via une signature électronique. Il est ainsi possible de conserver durablement la preuve non répudiable de cette validation.</p>
+
+
+<h1>Le « cash management »<span class="h1-baseline">Cas d'usage</span></h1>
+
+<%= image_tag("../images/ekeynox_hardwares.png", :alt => "Matériels de sécurité eKeynox", :class => "picto-r") %>
+
+<p>Les applications de cash management permettent aux clients entreprise des banques de gérer, de suivre et d’optimiser leur trésorerie et leurs opérations (virement, prélèvement, paiement, etc.). En raison de la criticité des informations et ordres échangés, ces applications sont particulièrement sensibles.</p>
+
+<p>eKeynox donne accès à ces applications depuis un mobile avec un fort niveau de sécurité. Que l'application soit web ou native, il assure l’authentification forte de votre client sur son mobile, la confidentialité de l’ensemble des données qui y sont stockées, ainsi que la confidentialité et l’intégrité de l’ensemble des transactions échangées entre son mobile  et votre infrastructure serveur (connexion SSL mutuellement authentifiée). De plus, il permet d’associer durablement l’identité de votre client à la transaction qu’il valide via une signature électronique. Il est ainsi possible de conserver durablement la preuve non répudiable de cette validation.</p>
+
+<p>Pour un niveau de sécurité maximum, un matériel de sécurité est accessible pour chaque plateforme. Ce sont l’identité de votre client et sa clé cryptographique de signature électronique qui y sont stockées.</p>
+
+<br/><br/>
+
+<p>En savoir plus sur <%= link_to "eKeynox Mobile Security Framework", ekeynox_path %>.</p>
+
+<p>Si vous souhaitez créer une nouvelle relation de proximité avec vos clients en dématérialisant l’agence dans leur mobile, <%= link_to "contactez-nous", "mailto:sales@netheos.net" %>.</p>
+
+
+<!--
+<table>
+    <thead>
+        <tr>
+			<td><h2>Business Solutions</h2></td>
+			<td><h2>Industry Solutions</h2></td>
+		</tr>
+    </thead>
+    <tbody>
+		<tr>
+			<td>
+				<% picto = image_tag("trusted_browser.png", :alt => "Web Access Protection", :class => "picto") %>
+				<%= link_to picto, solutions_web_access_protection_path, :class => "zoombox h340" %>
+				<h3>Web Access Protection</h3>
+				<p>Strong authentication + MitB protection on PC/Mac, USB devices, smartphones and tablets. <%= link_to 'Learn more »', solutions_web_access_protection_path, :class => "zoombox h340" %></p>
+			</td>
+			<td>
+				<% picto = image_tag("financial_institution.png", :alt => "Financial Institutions", :class => "picto") %>
+				<%= link_to picto, solutions_financial_institutions_path, :class => "zoombox h430" %>
+				<h3>Financial Institutions</h3>
+				<p>Online fraud protection and innovation for account inquiry, transactions and contrat signing. <%= link_to "Learn more »", solutions_financial_institutions_path, :class => "zoombox h430" %></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<% picto = image_tag("trusted_viewer.png", :alt => "Document Privacy", :class => "picto") %>
+				<%= link_to picto, solutions_document_privacy_path, :class => "zoombox h330" %>
+				<h3>Document Privacy</h3>
+				<p>Document encryption + leakage protection on PC/Mac, USB devices, smartphones and tablets. <%= link_to "Learn more »", solutions_document_privacy_path, :class => "zoombox h330" %></p>
+			</td>
+			<td>
+				<% picto = image_tag("device_manufacturer.png", :alt => "Device Manufacturers (OEM)", :class => "picto") %>
+				<%= link_to picto, solutions_device_manufacturers_path, :class => "zoombox h330" %>
+				<h3>Device Manufacturers <span style="font-size: 16px">(OEM)</span></h3>
+				<p>Ergonomic and powerful software to increase the value-added of hardware security devices. <%= link_to "Learn more »", solutions_device_manufacturers_path, :class => "zoombox h330" %></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<% picto = image_tag("signature.png", :alt => "Instant Contract Signing", :class => "picto") %>
+				<%= link_to picto, solutions_instant_contract_signing_path, :class => "zoombox h370" %>
+				<h3>Instant Contract Signing</h3>
+				<p>Digital signature for 100% paperless process on PC/Mac, USB devices, smartphones and tablets. <%= link_to "Learn more »", solutions_instant_contract_signing_path, :class => "zoombox h370" %></p>
+			</td>
+			<td>
+				<% picto = image_tag("software_compagny.png", :alt => "Software Compagnies (OEM)", :class => "picto") %>
+				<%= link_to picto, solutions_software_compagnies_path, :class => "zoombox h330" %>
+				<h3>Software Compagnies <span style="font-size: 16px">(white label)</span></h3>
+				<p>Easy to use software tools to take full advantage of digtal certificates in mobile applications. <%= link_to "Learn more »", solutions_software_compagnies_path, :class => "learn_more zoombox h330" %></p>
+			</td>
+		</tr>
+    </tbody>
+</table>
+
+<div class="clear"></div>
+
+-->
