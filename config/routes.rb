@@ -1,6 +1,5 @@
 Netheos::Application.routes.draw do
 
-
   match '/solutions/banking', :to => 'pages#banking'
   match '/solutions/payment', :to => 'pages#payment'
   match '/solutions/contract', :to => 'pages#contract'
@@ -11,10 +10,9 @@ Netheos::Application.routes.draw do
 
   match '/about', :to => 'pages#about'
   match '/privacy', :to => 'pages#privacy'
+  
 
   match '/services', :to => 'services#home'
-  
-  
   
   match '/ekeynox/apps', :to => 'ekeynox#apps'
   match '/ekeynox/usb_trust', :to => 'ekeynox#usb_trust'
