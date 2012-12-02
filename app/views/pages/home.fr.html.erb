@@ -36,7 +36,16 @@
     </div>    
 </div>
 
-<div style="height:60px; background: transparent url(../images/clients.png) no-repeat top left"></div>
+<div style="height:60px; text-align:left">
+	<% logo = image_tag("references_01.png", :alt => "Société Générale") %>
+	<%= link_to logo, "http://www.societegenerale.com/", :target => "_blank" %>
+	<% logo = image_tag("references_02.png", :alt => "Crédit du Nord") %>
+	<%= link_to logo, "http://www.groupe-credit-du-nord.com", :target => "_blank" %>
+	<% logo = image_tag("references_03.png", :alt => "Keynectis OpenTrust") %>
+	<%= link_to logo, "http://www.keynectis.com", :target => "_blank" %>
+	<% logo = image_tag("references_04.png", :alt => "Gemalto") %>
+	<%= link_to logo, "http://www.gemalto.com", :target => "_blank" %>
+</div>
 
 
 
