@@ -5,7 +5,7 @@ module ApplicationHelper
     if request.host.split('.').last == "fr"
       link_to ("in english", "http://www.netheos.com"+request.env['PATH_INFO'])
     else
-      link_to ("en Français", "http://www.netheos.fr"+request.env['PATH_INFO'])
+      link_to ("en français", "http://www.netheos.fr"+request.env['PATH_INFO'])
     end
   end
   

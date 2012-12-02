@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   @@title = ""
 
   def home
+    @title = "Trust & Privacy"
   end
   
   def ekeynox
