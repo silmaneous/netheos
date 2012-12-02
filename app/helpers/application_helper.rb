@@ -1,5 +1,14 @@
 module ApplicationHelper
   
+  #Return language options
+  def language
+    if request.host.split('.').last == "fr"
+      link_to ("in english", "http://www.netheos.com"+request.env['PATH_INFO'])
+    else
+      link_to ("en Français", "http://www.netheos.fr"+request.env['PATH_INFO'])
+    end
+  end
+  
   # Return good title
   def title
     base_title = "Netheos"
@@ -28,8 +37,8 @@ module ApplicationHelper
     end
   end
   
-    def highlight(path)
-        "highlight" if current_page?(path)
-    end
+# def highlight(path)
+#   "highlight" if current_page?(path)
+# end
 
 end
