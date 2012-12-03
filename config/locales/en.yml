@@ -1,5 +1,5 @@
 en:
-    hello: "Bonjour"
+    hello: "Hello world"
     home: "Trust & Privacy"
 
     banking: "M-BANKING"
@@ -9,10 +9,10 @@ en:
     solutions: "SOLUTIONS"
     ekeynox: "EKEYNOX"
     services: "SERVICES"
-    about: "A PROPOS"
+    about: "ABOUT"
     
-    privacy: "Données Privées"
-    logos: "Nos logos"
-    call: "Tél. "
+    privacy: "Privacy Policy"
+    logos: "Logos"
+    call: "Call us"
 
     languages: "Languages"

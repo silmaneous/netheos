@@ -36,7 +36,9 @@
     </div>    
 </div>
 
-<div style="height:60px; text-align:left">
+<div class="clear"></div>
+
+<div style="height:60px; width: 950px; text-align:center;">
 	<% logo = image_tag("references_01.png", :alt => "Société Générale") %>
 	<%= link_to logo, "http://www.societegenerale.com/", :target => "_blank" %>
 	<% logo = image_tag("references_02.png", :alt => "Crédit du Nord") %>
@@ -46,19 +48,3 @@
 	<% logo = image_tag("references_04.png", :alt => "Gemalto") %>
 	<%= link_to logo, "http://www.gemalto.com", :target => "_blank" %>
 </div>
-
-
-
-<!--
-	<% picto1 = image_tag("../images/ekeynox.png", :alt => "ekeynox", :class => "picto") %>
-	<%= link_to picto1, ekeynox_path %>
-	<p><strong>The eKeynox product family</strong> that combines innovation and ease-of-use to deploy digital certificates on a variety of computing platforms: PC and Mac, USB flash drive/token, smartphones and tablets. From strong authentication to digital signatures and data encryption, eKeynox leverages the Public Key Infrastructure (PKI) by creating new uses for new markets. <%= link_to "Learn more.", ekeynox_path, :class => "learn_more" %></p>
-
-<br/>
-
-	<% picto2 = image_tag("financial_institution1_5.png", :alt => "Financial Institutions", :class => "picto") %>
-	<%= link_to picto2, solutions_financial_institutions_path %>
-	<p><strong>You want protection from online fraud</strong>, to enhance already-deployed services or develop significant innovation? Netheos can help transform the relationship you've built with your corporate and retail clients. Our solutions enable you to offer clients and partners a strong digital identity and smart software that will not only make their lives easier, but also provide you with the security you need. <%= link_to "Learn more.", solutions_financial_institutions_path, :class => "learn_more" %></p>
--->
-<div class="clear"></div>
-
