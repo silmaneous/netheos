@@ -29,6 +29,8 @@ Netheos::Application.routes.draw do
   match '/solutions/device_manufacturers', :to => 'solutions#device_manufacturers'
   match '/solutions/software_compagnies', :to => 'solutions#software_compagnies'
 
+  match '/press/10122013_cdiscount_mastercard', :to => 'pages#cdiscount_mastercard'
+
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:

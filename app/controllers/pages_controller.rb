@@ -24,5 +24,9 @@ class PagesController < ApplicationController
   def about
     @title = t(:about)
   end
+
+  def cdiscount_mastercard 
+    @title = t(:press)
+  end
   
 end
